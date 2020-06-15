@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    <title>FT2 - PMU</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="dashboard-nav">
+        <div class="nav-logo-container">
+          <img class="nav-logo" src="img/logo-pmu.png" alt="logo pmu">
+        </div>
+        <ul class="tabs">
+          <div class="nav-box">
+            <li class="nav-li-global active"><a href="#global">Global</a></li>
+          </div>
+          <div class="nav-box">
+            <li class="nav-li-hippique"><a href="#hippique">Hippique</a></li>
+          </div>
+          <div class="nav-box">
+            <li class="nav-li-sport"><a href="#sport">Sport</a></li>
+          </div>
+          <div class="nav-box">
+            <li class="nav-li-poker"><a href="#poker">Poker</a></li>
+          </div>
+        </ul>
+      </div>
+
+<!-- HEADER -->
+      <header>
+        <div class="dashboard-header">
+          <h2 class="dashboard-header-title active_header_title">Global</h2>
+        </div>
+      </header>
+
+
+
+<!-- /////////\\\\\\\\ -->
+<!-- START: GLOBAL TAB -->
+<!-- /////////\\\\\\\\ -->
+        <div class="tabs-content">
+          <div id="global" class="tab-content active">
+            <!-- Chart Enjeux et PBJ -->
+            <div class="container">
+              <div class="title-btn-chart-container">
+                <div class="title-globaleEnjeuxPbj-container">
+                  <i class="fas fa-angle-down arrow-globaleEnjeuxPbj arrow-active" style='font-size:24px; color: #3AAA34;'></i>
+                  <h2 class="title-chart">Enjeux / PBJ</h2>
+                </div>
+                <form method="post">
+                 <select name="choice" class="btn-add-dashboard">
+                   <option value="0"hidden>Ajouter à un dashboard</option>
+                   <option value="chart1">Réunion 11/01/19</option>
+                   <option value="chart2">Réunion 20/12/18</option>
+                   <option value="chart3">Réunion 26/12/18</option>
+                 </select>
+                </form>
+              </div>
+              <div class="chart-container">
+                <div class="chart-global-enjeux-pbj">
+                  <div class="chart-button">
+                    <button class="chart_btn enjeux_btn btn-active" type="button" name="button">ENJEUX</button>
+                    <button class="chart_btn pbj_btn" type="button" name="button">PBJ</button>
+                  </div>
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+            </div>
+            <!-- Chart Evolution globale -->
+            <div class="container">
+              <div class="title-btn-chart-container">
+                <div class="title-globaleEvolution-container">
+                  <i class="fas fa-angle-down arrow-globaleEvolution arrow-active arrow-active" style='font-size:24px; color: #3AAA34;'></i>
+                  <h2 class="title-chart">Evolution globale</h2>
+                </div>
+                <div class="btn-chart">
+                  <form method="post">
+                   <select name="choice" class="btn-add-dashboard">
+                     <option value="0"hidden>Ajouter à un dashboard</option>
+                     <option value="chart1">Réunion 11/01/19</option>
+                     <option value="chart2">Réunion 20/12/18</option>
+                     <option value="chart3">Réunion 26/12/18</option>
+                   </select>
+                  </form>                </div>
+              </div>
+              <div class="chart-container">
+                <div class="chart-global-evolutionGlobale">
+                  <div class="chart-button">
+                    <button class="evolution_enjeux_btn btn-active" type="button" name="button">ENJEUX</button>
+                    <button class="evolution_pbj_btn" type="button" name="button">PBJ</button>
+                  </div>
+                  <div class="global-evolution-chart">
+                    <div>
+                      <h4>Evolution 2016 / 2017</h4>
+                      <p class="global-evolution-data data-number">+6,4%</p>
+                    </div>
+                    <div>
+                      <h4>Evolution RT2 2016 / RT2 2017</h4>
+                      <p class="global-evolution-rt2-data data-number">+2,6%</p>
+                    </div>
+                    <div>
+                      <h4>Evolution Budget 2016 / Budget 2017</h4>
+                      <p class="global-evolution-budget-data data-number">+3,1%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="title-prevision">Prévisions</h2>
+
+            <div class="container">
+              <div class="title-btn-chart-container">
+                <div class="title-globalePrevisionEnjeuxPbj-container">
+                  <i class="fas fa-angle-down arrow-globalePrevisionEnjeuxPbj arrow-active" style='font-size:24px; color: #3AAA34;'></i>
+                  <h2 class="title-chart">Enjeux / PBJ</h2>
+                </div>
+                <div class="btn-chart">
+                  <form method="post">
+                   <select name="choice" class="btn-add-dashboard">
+                     <option value="0"hidden>Ajouter à un dashboard</option>
+                     <option value="chart1">Réunion 11/01/19</option>
+                     <option value="chart2">Réunion 20/12/18</option>
+                     <option value="chart3">Réunion 26/12/18</option>
+                   </select>
+                  </form>                </div>
+              </div>
+              <div class="chart-container">
+                <div class="chart-prevision-enjeux-pbj">
+                  <div class="chart-button">
+                    <button class="chart_btn prevision_enjeux_btn btn-active" type="button" name="button">ENJEUX</button>
+                    <button class="chart_btn prevision_pbj_btn" type="button" name="button">PBJ</button>
+                  </div>
+                  <canvas id="myChartPrevision"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chart PREVISION EVOLUTION globale -->
+            <div class="container">
+              <div class="title-btn-chart-container">
+                <div class="title-globalePrevisionEvo-container">
+                  <i class="fas fa-angle-down arrow-globalePrevisionEvo arrow-active arrow-active" style='font-size:24px; color: #3AAA34;'></i>
+                  <h2 class="title-chart">Evolution globale</h2>
+                </div>
+                <div class="btn-chart">
+                  <form method="post">
+                   <select name="choice" class="btn-add-dashboard">
+                     <option value="0"hidden>Ajouter à un dashboard</option>
+                     <option value="chart1">Réunion 11/01/19</option>
+                     <option value="chart2">Réunion 20/12/18</option>
+                     <option value="chart3">Réunion 26/12/18</option>
+                   </select>
+                  </form>                </div>
+              </div>
+              <div class="chart-container">
+                <div class="chart-global-PrevisionEvoGlobale">
+                  <div class="chart-button">
+                    <button class="previsionEvolution_enjeux_btn btn-active" type="button" name="button">ENJEUX</button>
+                    <button class="previsionEvolution_pbj_btn" type="button" name="button">PBJ</button>
+                  </div>
+                  <div class="global-evolution-chart">
+                    <div>
+                      <h4>Evolution 2016 / 2017</h4>
+                      <p class="global-previsionEvolution-data data-number">+3,8%</p>
+                    </div>
+                    <div>
+                      <h4>Evolution RT2 2016 / RT2 2017</h4>
+                      <p class="global-previsionEvolution-rt2-data data-number">+1,9%</p>
+                    </div>
+                    <div>
+                      <h4>Evolution Budget 2016 / Budget 2017</h4>
+                      <p class="global-previsionEvolution-budget-data data-number">+2,4%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- /////////\\\\\\\\ -->
+<!-- END: GLOBAL TAB -->
+<!-- /////////\\\\\\\\ -->
+
+
+<!-- /////////\\\\\\\\ -->
+<!-- START: HIPPIQUE TAB -->
+<!-- /////////\\\\\\\\ -->
+          <div id="hippique" class="tab-content">
+            <!-- Chart Enjeux et PBJ -->
+            <div class="container">
+              <div class="title-btn-chart-container">
+                <div class="title-hippiqueEnjeuxPbj-container">
+                  <i class="fas fa-angle-down arrow-hippiqueEnjeuxPbj arrow-active" style='font-size:24px; color: #3AAA34;'></i>
+                  <h2 class="title-chart">Enjeux / PBJ hippique</h2>
+                </div>
+                <div class="btn-chart">
+                  <form method="post">
+                   <select name="choice" class="btn-add-dashboard">
+                     <option value="0"hidden>Ajouter à un dashboard</option>
+                     <option value="chart1">Réunion 11/01/19</option>
+                     <option value="chart2">Réunion 20/12/18</option>
+                     <option value="chart3">Réunion 26/12/18</option>
+                   </select>
+                  </form>                </div>
+              </div>
+              <div class="chart-container">
+                <div class="chart-hippique-enjeux-pbj">
+                  <div class="chart-button">
+                    <button class="chart-btn enjeux_btn btn-active" type="button" name="button">ENJEUX</button>
+                    <button class="chart-btn pbj_btn" type="button" name="button">PBJ</button>
+                  </div>
+                  <canvas id="myChart2"></canvas>
+                </div>
+              </div>
+            </div>
+<!-- Evolution globale hippique -->
+            <div class="container">
+              <div class="title-btn-chart-container">
+                <div class="title-globalePrevisionEvo-container">
+                  <i class="fas fa-angle-down arrow-globalePrevisionEvo arrow-active arrow-active" style='font-size:24px; color: #3AAA34;'></i>
+                  <h2 class="title-chart">Evolution globale hippique</h2>
+                </div>
+                <div class="btn-chart">
+                  <form method="post">
+                   <select name="choice" class="btn-add-dashboard">
+                     <option value="0"hidden>Ajouter à un dashboard</option>
+                     <option value="chart1">Réunion 11/01/19</option>
+                     <option value="chart2">Réunion 20/12/18</option>
+                     <option value="chart3">Réunion 26/12/18</option>
+                   </select>
+                  </form>                </div>
+              </div>
+              <div class="chart-container">
+                <div class="chart-global-PrevisionEvoGlobale">
+                  <div class="chart-button">
+                    <button class="previsionEvolution_enjeux_btn btn-active" type="button" name="button">ENJEUX</button>
+                    <button class="previsionEvolution_pbj_btn" type="button" name="button">PBJ</button>
+                  </div>
+                  <div class="global-evolution-chart">
+                    <div>
+                      <h4>Evolution 2016 / 2017</h4>
+                      <p class="global-previsionEvolution-data data-number">+3,8%</p>
+                    </div>
+                    <div>
+                      <h4>Evolution RT2 2016 / RT2 2017</h4>
+                      <p class="global-previsionEvolution-rt2-data data-number">+1,9%</p>
+                    </div>
+                    <div>
+                      <h4>Evolution Budget 2016 / Budget 2017</h4>
+                      <p class="global-previsionEvolution-budget-data data-number">+2,4%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!-- ÉVOLUTION DES ENJEUX ENGAGÉS INTERNET & MOBILE-->
+            <div class="container">
+              <div class="title-btn-chart-container">
+                <div class="title-hippiqueEvolutionHebdo-container">
+                  <i class='fas fa-angle-down arrow-hippiqueEvolutionHebdo' style='font-size:24px; color: #3AAA34;'></i>
+                  <h2 class="title-chart">Evolution hebdo. / hippique par réseau</h2>
+                </div>
+                <div class="btn-chart">
+                  <form method="post">
+                   <select name="choice" class="btn-add-dashboard">
+                     <option value="0"hidden>Ajouter à un dashboard</option>
+                     <option value="chart1">Réunion 11/01/19</option>
+                     <option value="chart2">Réunion 20/12/18</option>
+                     <option value="chart3">Réunion 26/12/18</option>
+                   </select>
+                  </form>                </div>
+              </div>
+              <div class="chart-container">
+                <div class="chart-hippique-enjeux-pbj">
+                  <div class="chart-button">
+                    <button class="enjeux_btn btn-active" type="button" name="button">ENJEUX</button>
+                    <button class="pbj_btn" type="button" name="button">PBJ</button>
+                  </div>
+                  <div id="chart-hippique-internetMobile"></div>
+                </div>
+              </div>
+            </div>
+<!-- Enjeux par paris / Enjeux par réseaux -->
+            <div class="container">
+              <div class="title-btn-chart-container">
+                <div class="title-globalePrevisionEvo-container">
+                  <i class="fas fa-angle-down arrow-globalePrevisionEvo arrow-active arrow-active" style='font-size:24px; color: #3AAA34;'></i>
+                  <h2 class="title-chart">Enjeux par paris / Enjeux par réseaux</h2>
+                </div>
+                <div class="btn-chart">
+                  <form method="post">
+                   <select name="choice" class="btn-add-dashboard">
+                     <option value="0"hidden>Ajouter à un dashboard</option>
+                     <option value="chart1">Réunion 11/01/19</option>
+                     <option value="chart2">Réunion 20/12/18</option>
+                     <option value="chart3">Réunion 26/12/18</option>
+                   </select>
+                  </form>
+                </div>
+              </div>
+              <div class="chart-container">
+                <div class="chart-hippique-enjeuxParisReseau">
+                  <div class="global-evolution-chart">
+                    <div id="hippique-gauge"></div>
+                  </div>
+                  <div class="global-evolution-chart">
+                    <div id="hippique-gauge2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- /////////\\\\\\\\ -->
+<!-- END: HIPPIQUE TAB -->
+<!-- /////////\\\\\\\\ -->
+
+
+<!-- /////////\\\\\\\\ -->
+<!-- START: SPORT TAB -->
+<!-- /////////\\\\\\\\ -->
+          <div id="sport" class="tab-content">
+            <div class="container">
+              <div class="title-btn-chart-container">
+                <div class="title-chart-container">
+                  <i class='fas fa-angle-down' style='font-size:24px; color: #3AAA34;'></i>
+                  <h2 class="title-chart">Enjeux / PBJ</h2>
+                </div>
+                <div class="btn-chart">
+                  <form method="post">
+                   <select name="choice" class="btn-add-dashboard">
+                     <option value="0"hidden>Ajouter à un dashboard</option>
+                     <option value="chart1">Réunion 11/01/19</option>
+                     <option value="chart2">Réunion 20/12/18</option>
+                     <option value="chart3">Réunion 26/12/18</option>
+                   </select>
+                  </form>                </div>
+              </div>
+              <div class="chart-container">
+                <div class="chart-sport-enjeux-pbj">
+                  <div class="chart-button">
+                    <button class="enjeux_btn btn-active" type="button" name="button">ENJEUX</button>
+                    <button class="pbj_btn" type="button" name="button">PBJ</button>
+                  </div>
+                  <canvas id="myChartSport"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- /////////\\\\\\\\ -->
+<!-- END: SPORT TAB -->
+<!-- /////////\\\\\\\\ -->
+
+
+<!-- /////////\\\\\\\\ -->
+<!-- START: POKER TAB -->
+<!-- /////////\\\\\\\\ -->
+          <div id="poker" class="tab-content">
+            <div class="container">
+              <div class="title-btn-chart-container">
+                <div class="title-chart-container">
+                  <i class='fas fa-angle-down' style='font-size:24px; color: #3AAA34;'></i>
+                  <h2 class="title-chart">Enjeux / PBJ</h2>
+                </div>
+                <div class="btn-chart">
+                  <form method="post">
+                   <select name="choice" class="btn-add-dashboard">
+                     <option value="0"hidden>Ajouter à un dashboard</option>
+                     <option value="chart1">Réunion 11/01/19</option>
+                     <option value="chart2">Réunion 20/12/18</option>
+                     <option value="chart3">Réunion 26/12/18</option>
+                   </select>
+                  </form>                </div>
+              </div>
+              <div class="chart-container">
+                <div class="chart-poker-enjeux-pbj">
+                  <div class="chart-button">
+                    <button class="enjeux_btn btn-active" type="button" name="button">ENJEUX</button>
+                    <button class="pbj_btn" type="button" name="button">PBJ</button>
+                  </div>
+                  <canvas id="myChartPoker"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- /////////\\\\\\\\ -->
+<!-- END: POKER TAB -->
+<!-- /////////\\\\\\\\ -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <!-- Include fusioncharts core library -->
+    <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <!-- Include fusion theme -->
+    <script type="text/javascript" src=" https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script src="js/global-chart.js"></script>
+    <script src="js/hippique-chart.js"></script>
+    <script src="js/sport-chart.js"></script>
+    <script src="js/poker-chart.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+
+    </script>
+  </body>
+</html>

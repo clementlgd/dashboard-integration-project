@@ -1,0 +1,376 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+  background-color: #FDFDFD;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+button{
+  outline: 0;
+  cursor: pointer;
+  background-color: white;
+}
+/* GENERAL */
+
+
+/* vert pale : #FDFDFD */
+/* violet : #8A34AA */
+/* vert : #3AAA34 */
+/* oranger : #DB4504 */
+/* bleu : #1D5091 */
+
+
+.dashboard{
+  display: flex;
+  background-color: #FCFCFC;
+}
+
+/* NAVIGATION LEFT */
+.dashboard-nav{
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+  position: fixed;
+  z-index: 10;
+}
+.nav-logo-container{
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 80px;
+  margin-top: 30px;
+}
+.nav-logo{
+  width: 60%;
+}
+.tabs{
+  margin-top: 70px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.nav-box{
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+.dashboard li {
+  width: 80%;
+  padding: 10px 15px 15px 10px;
+  border-radius: 5px 0 0 5px;
+}
+.dashboard li.active{
+  border-right: 3px solid #00692D;
+  border-radius: 0;
+  font-weight: bold;
+  border-radius: 5px 0 0 5px;
+  background-color: #F5F1F5;
+}
+.dashboard li:hover{
+  background-color: #F5F1F5;
+}
+.nav-li-global a{
+  color: #00692D !important;
+}
+.nav-li-hippique a{
+  color: #00692D !important;
+}
+.nav-li-sport a{
+  color: #DB4504 !important;
+}
+.nav-li-poker a{
+  color: #1D5091 !important;
+}
+.dashboard-nav .nav-li-sport.active{
+  border-right: 3px solid #DB4504;
+}
+.dashboard-nav .nav-li-poker.active {
+  border-right: 3px solid #1D5091;
+}
+.dashboard .tabs a {
+  color: black;
+  padding: 12px 140px 20px 10px;
+}
+/* NAVIGATION LEFT */
+
+
+
+/* DASHBOARD HEADER */
+.dashboard-header{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #3AAA34;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+.red{
+  background-color: #DB4504!important;
+}
+.blue{
+  background-color: #1D5091!important;
+}
+.dashboard-header-title{
+  text-transform: uppercase;
+  color: white;
+  margin-left: 300px;
+  font-size: 1.8em;
+}
+.fas fa-angle-down {
+  color: #3AAA34;
+  transition: 0.2s;
+  z-index: 0;
+}
+/* DASHBOARD HEADER */
+
+
+
+/* TAB DISPLAY */
+.tabs .active a{
+}
+.tabs-content{
+  width: 100%;
+  margin-left: 250px;
+  margin-top: 80px;
+}
+.tab-content{
+  display: none;
+}
+.tab-content.active{
+  display: block;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+/* TAB DISPLAY */
+
+
+/* GENERAL CHART ELEMENT */
+.container{
+  width: 90%;
+}
+.chart-container{
+  display: flex !important;
+  justify-content: center!important;
+  width: 100%;
+}
+.title-btn-chart-container{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-chart-container{
+  display: flex;
+  cursor: pointer;
+}
+.title-globaleEnjeuxPbj-container, .title-globaleEvolution-container, .title-hippiqueEnjeuxPbj-container, .title-hippiqueEvolutionHebdo-container, .title-globalePrevisionEnjeuxPbj-container, .title-globalePrevisionEvo-container {
+  display: flex;
+  cursor: pointer;
+}
+.title-chart{
+  color: #3AAA34;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  margin-left: 15px;
+}
+.btn-add-dashboard{
+  padding: 8px 12px;
+  border-radius: 5px;
+  border-color: #8A34AA;
+  color: #8A34AA;
+  padding: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  outline: 0;
+  cursor: pointer;
+}
+.btn-add-dashboard:hover{
+  background-color: #8A34AA;
+  color: white;
+  transition: 0.6s;
+}
+.tab-chart-hidden{
+  display: none !important;
+}
+.arrow-desactive{
+  transform: rotate(-90deg);
+  transition: 0.3s;
+}
+.arrow-active{
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+/* GENERAL CHART ELEMENT */
+
+
+/* GLOBAL CHART */
+.chart-global-enjeux-pbj{
+  width: 100%;
+  height: 20em;
+  padding: 0px 50px 90px 50px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+  border-radius: 5px;
+}
+.chart-global-evolutionGlobale{
+  width: 100%;
+  height: 14em;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.chart-prevision-enjeux-pbj{
+  width: 100%;
+  height: 20em;
+  padding: 0px 50px 90px 50px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+  border-radius: 5px;
+}
+.chart-global-PrevisionEvoGlobale{
+  width: 100%;
+  height: 14em;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.chart-button{
+  display: flex;
+  justify-content: center;
+  margin: 0px 30px 30px 30px;
+}
+.enjeux_btn{
+  width: 200px;
+  padding: 10px;
+  border-radius: 0px 0px 0px 5px;
+  color: #3AAA34;
+}
+.pbj_btn{
+  width: 200px;
+  padding: 10px;
+  border-radius: 0px 0px 5px 0px;
+  color: #3AAA34;
+}
+.evolution_enjeux_btn{
+  width: 200px;
+  padding: 10px;
+  border-radius: 0px 0px 0px 5px;
+  color: #3AAA34;
+}
+.evolution_pbj_btn{
+  width: 200px;
+  padding: 10px;
+  border-radius: 0px 0px 5px 0px;
+  color: #3AAA34;
+}
+.prevision_enjeux_btn{
+  width: 200px;
+  padding: 10px;
+  border-radius: 0px 0px 0px 5px;
+  color: #3AAA34;
+}
+.prevision_pbj_btn{
+  width: 200px;
+  padding: 10px;
+  border-radius: 0px 0px 5px 0px;
+  color: #3AAA34;
+}
+.previsionEvolution_enjeux_btn{
+  width: 200px;
+  padding: 10px;
+  border-radius: 0px 0px 0px 5px;
+  color: #3AAA34;
+}
+.previsionEvolution_pbj_btn{
+  width: 200px;
+  padding: 10px;
+  border-radius: 0px 0px 5px 0px;
+  color: #3AAA34;
+}
+.btn-active{
+  border-top: 4px solid #3AAA34;
+}
+.global-evolution-chart{
+  display: flex;
+  justify-content: space-around;
+}
+.global-evolution-chart h4{
+  font-weight: 400;
+}
+.data-number{
+  color: #3AAA34;
+  font-size: 45px;
+  font-weight: 300;
+  margin-top: 40px;
+  width: 100%;
+}
+.title-prevision{
+  color: #3AAA34;
+  text-transform: uppercase;
+  font-size: 1.9em;
+  margin: 40px 0 25px 0;
+}
+/* GLOBAL CHART */
+
+
+/* HIPPIQUE CHART */
+.chart-hippique-enjeux-pbj{
+  width: 100%;
+  height: 20em;
+  padding: 0px 50px 90px 50px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+  border-radius: 5px;
+}
+.arrow-hippiqueEnjeuxPbj{
+
+}
+.chart-hippique-enjeuxParisReseau{
+  width: 100%;
+  height: 12em;
+  padding: 10px 50px 90px 50px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+/* HIPPIQUE CHART */
+
+/* SPORT CHART */
+.chart-sport-enjeux-pbj{
+  width: 100%;
+  height: 20em;
+  padding: 0px 50px 90px 50px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+  border-radius: 5px;
+}
+/* SPORT CHART */
+
+/* POKER CHART */
+.chart-poker-enjeux-pbj{
+  width: 100%;
+  height: 20em;
+  padding: 0px 50px 90px 50px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+  border-radius: 5px;
+}
+/* POKER CHART */
